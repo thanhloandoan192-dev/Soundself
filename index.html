@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0218)file:///C:/Users/xuxy/AppData/Roaming/Claude/local-agent-mode-sessions/a080bc26-96d9-46d2-afc0-3ed310caf611/7e0aa6c2-dc00-409c-ae32-9afcc6cbc4e5/local_86a2d8c3-e9d1-4400-a98e-1392be0dc5a1/outputs/music-personality.html -->
+<!-- saved from url=(0065)file:///C:/Users/xuxy/BoClaw/workspace/soundself_fixed/index.html -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -94,7 +94,14 @@ body.cursor-hover #cursor-ring{width:60px;height:60px;background:rgba(255,255,25
   background:var(--hero-a);
   color:#fff;overflow:hidden;padding:130px 6% 70px;text-align:left;
 }
-.hero-photo-wrap{position:absolute;inset:0;z-index:0;overflow:hidden;background:var(--hero-a);}
+.hero-photo-wrap{
+  position:absolute;inset:0;z-index:0;overflow:hidden;
+  background:
+    radial-gradient(circle at 72% 22%, rgba(255,179,122,0.34), transparent 13%),
+    radial-gradient(circle at 68% 28%, rgba(255,122,61,0.22), transparent 24%),
+    radial-gradient(circle at 78% 36%, rgba(255,243,223,0.10), transparent 16%),
+    linear-gradient(120deg, #0f0b09 0%, #1b130f 42%, #2a1710 100%);
+}
 .hero-photo-breathe{
   width:100%;height:100%;transform-origin:center center;
   animation:breathe 6.5s ease-in-out infinite;
@@ -273,8 +280,9 @@ section{position:relative;padding:110px 24px;}
 #resultSection{
   position:relative;
   background:
-    linear-gradient(rgba(10,5,3,0.94),rgba(10,5,3,0.96)),
-    url("https://images.unsplash.com/photo-1763757575623-ffafe0867aa3?fm=jpg&q=70&w=1600&fit=crop&auto=format") center/cover no-repeat;
+    radial-gradient(circle at 18% 18%, rgba(255,179,122,0.16), transparent 24%),
+    radial-gradient(circle at 82% 78%, rgba(125,211,252,0.14), transparent 26%),
+    linear-gradient(rgba(10,5,3,0.94),rgba(10,5,3,0.97));
 }
 .wrap{max-width:900px;margin:0 auto;}
 .section-head{text-align:center;margin-bottom:56px;}
@@ -497,6 +505,15 @@ footer a{text-decoration:underline;}
 .hidden{display:none !important;}
 
 @media (max-width:600px){
+  .nav{padding:14px 16px;}
+  .nav .logo{font-size:13px;}
+  .hero{min-height:100dvh;padding:104px 20px 56px;}
+  .hero h1{font-size:clamp(28px,9vw,38px);}
+  .hero .cta-row,.result-actions,.quiz-nav{flex-direction:column;align-items:stretch;}
+  .btn{width:100%;min-height:52px;}
+  .hero-bigword{font-size:clamp(42px,18vw,84px);white-space:normal;max-width:100%;}
+  .question-card{min-height:420px;}
+  .q-option{padding:16px 18px;font-size:14px;}
   section{padding:80px 20px;}
   .platform-grid{grid-template-columns:repeat(2,1fr);}
   .report-grid{gap:20px;}
@@ -510,9 +527,9 @@ footer a{text-decoration:underline;}
 </head>
 <body class="">
 
-<div id="cursor-dot" style="left: 667px; top: 4px;"></div>
-<div id="cursor-ring" style="left: 667px; top: 4px;"></div>
-<div id="noteLayer"></div>
+<div id="cursor-dot" style="left: 553px; top: 328px;"></div>
+<div id="cursor-ring" style="left: 276.66px; top: 253.38px;"></div>
+<div id="noteLayer"><span class="note-particle" style="color: rgb(255, 122, 61); left: 553px; top: 328px; --dx: 8px; --dr: -18deg;">♫</span></div>
 
 <nav class="nav">
   <div class="logo">音境 SoundSelf</div>
@@ -521,9 +538,9 @@ footer a{text-decoration:underline;}
 
 <!-- HERO -->
 <section class="hero" id="heroSection">
-  <div class="hero-photo-wrap" style="transform: translateY(270px) scale(1.05);">
+  <div class="hero-photo-wrap" style="transform: translateY(165.806px) scale(1.04719);">
     <div class="hero-photo-breathe">
-      <img class="hero-photo" id="heroPhoto" src="./index_files/photo-1670788050233-7eb0c6902915" alt="戴墨镜、身穿街头风外套、充满欧美音乐气质的年轻人肖像">
+      <img class="hero-photo" id="heroPhoto" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" aria-hidden="true">
     </div>
   </div>
   <div class="hero-tint"></div>
@@ -537,7 +554,7 @@ footer a{text-decoration:underline;}
   </div>
   <div class="hero-annotate">feel the beat ✷</div>
 
-  <div class="hero-top" style="opacity: -0.1; transform: translateY(-30px);">
+  <div class="hero-top" style="opacity: -0.0381733; transform: translateY(-28.3138px);">
     <span class="eyebrow">MUSIC PERSONALITY REPORT</span>
     <h1>你听的歌<br>藏着你的另一种人格</h1>
     <p class="sub">通过听歌习惯、曲风偏好与情绪使用方式，三分钟生成一张只属于你的「音乐人格报告」——附赠专属灵魂动物，可保存、可分享、可开始新一轮循环。</p>
@@ -545,7 +562,7 @@ footer a{text-decoration:underline;}
       <span class="pulse-wrap">
         <button class="btn btn-primary magnetic" id="startBtn">开始测评</button>
       </span>
-      <a href="file:///C:/Users/xuxy/AppData/Roaming/Claude/local-agent-mode-sessions/a080bc26-96d9-46d2-afc0-3ed310caf611/7e0aa6c2-dc00-409c-ae32-9afcc6cbc4e5/local_86a2d8c3-e9d1-4400-a98e-1392be0dc5a1/outputs/music-personality.html#platformSection" class="btn btn-ghost magnetic">了解接入方式</a>
+      <a href="file:///C:/Users/xuxy/BoClaw/workspace/soundself_fixed/index.html#platformSection" class="btn btn-ghost magnetic">了解接入方式</a>
     </div>
     <div class="hero-audio">
       <button id="audioToggle" aria-label="播放氛围伴奏">▶</button>
@@ -560,7 +577,7 @@ footer a{text-decoration:underline;}
   </div>
 
   <div class="hero-bottom">
-    <div class="hero-bigword" id="heroBigword" style="transform: translate(30px, -90px);">SOUNDSELF</div>
+    <div class="hero-bigword" id="heroBigword" style="transform: translate(18.4229px, -55.2686px);">SOUNDSELF</div>
     <div class="hero-bottom-meta">Listening Habits<br>Genre Mapping<br>Mood Decoding</div>
   </div>
   <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
@@ -581,7 +598,7 @@ footer a{text-decoration:underline;}
       <input type="text" id="nicknameInput" maxlength="12" placeholder="例如：小夜">
     </div>
 
-    <div class="platform-grid reveal in" id="platformGrid"><div class="platform-card" data-id="netease"><div class="inner">
+    <div class="platform-grid reveal in" id="platformGrid"><div class="platform-card selected" data-id="netease"><div class="inner" style="">
         <div class="check"></div>
         <div class="platform-badge" style="background:radial-gradient(circle at 32% 26%, #ff5b6b, #c20c0c 55%, #7a0000 100%)">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -591,7 +608,7 @@ footer a{text-decoration:underline;}
           </svg>
         </div>
         <div class="pname">网易云音乐</div>
-      </div></div><div class="platform-card" data-id="qqmusic"><div class="inner">
+      </div></div><div class="platform-card" data-id="qqmusic"><div class="inner" style="">
         <div class="check"></div>
         <div class="platform-badge" style="background:radial-gradient(circle at 32% 26%, #5be8a8, #31c27c 55%, #0c6b45 100%)">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -611,7 +628,7 @@ footer a{text-decoration:underline;}
           </svg>
         </div>
         <div class="pname">汽水音乐</div>
-      </div></div><div class="platform-card" data-id="apple"><div class="inner">
+      </div></div><div class="platform-card" data-id="apple"><div class="inner" style="">
         <div class="check"></div>
         <div class="platform-badge" style="background:radial-gradient(circle at 32% 26%, #ff6f8f, #fa233b 55%, #8f001c 100%)">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -657,11 +674,11 @@ footer a{text-decoration:underline;}
       <div class="tag">Step 02 · 听歌习惯</div>
       <h2>关于你怎么听歌</h2>
     </div>
-    <div class="progress-track"><div class="progress-fill" id="quizProgressFill" style="width: 0%;"></div></div>
-    <div class="progress-label"><span id="quizProgressText">1 / 20</span><span>诚实作答，结果更准</span></div>
-    <div class="question-card" id="questionCard"><div class="q-slide active" data-i="0"><div class="q-index">问题 1 / 20</div>
+    <div class="progress-track"><div class="progress-fill" id="quizProgressFill" style="width: 5%;"></div></div>
+    <div class="progress-label"><span id="quizProgressText">2 / 20</span><span>诚实作答，结果更准</span></div>
+    <div class="question-card" id="questionCard"><div class="q-slide leaving" data-i="0"><div class="q-index">问题 1 / 20</div>
       <div class="q-text">你更常做的事？</div>
-      <div class="q-options"><button class="q-option" data-p="E" data-oi="0"><span class="dot"></span>隔三差五刷新歌单/歌手电台，喜欢挖新歌</button><button class="q-option" data-p="E" data-oi="1"><span class="dot"></span>刷完新歌马上去查这人还有什么「冷门神仙曲」，生怕错过</button><button class="q-option" data-p="L" data-oi="2"><span class="dot"></span>反复听那几个喜欢的歌手/歌单，很少换</button><button class="q-option" data-p="L" data-oi="3"><span class="dot"></span>手机存储清了好几次，但那几个歌单从没删过</button></div></div><div class="q-slide" data-i="1"><div class="q-index">问题 2 / 20</div>
+      <div class="q-options"><button class="q-option" data-p="E" data-oi="0"><span class="dot"></span>隔三差五刷新歌单/歌手电台，喜欢挖新歌</button><button class="q-option picked" data-p="E" data-oi="1"><span class="dot"></span>刷完新歌马上去查这人还有什么「冷门神仙曲」，生怕错过</button><button class="q-option" data-p="L" data-oi="2"><span class="dot"></span>反复听那几个喜欢的歌手/歌单，很少换</button><button class="q-option" data-p="L" data-oi="3"><span class="dot"></span>手机存储清了好几次，但那几个歌单从没删过</button></div></div><div class="q-slide active" data-i="1"><div class="q-index">问题 2 / 20</div>
       <div class="q-text">发现一首好歌之后，你会？</div>
       <div class="q-options"><button class="q-option" data-p="E" data-oi="0"><span class="dot"></span>顺藤摸瓜听完这个歌手所有作品和相似推荐</button><button class="q-option" data-p="E" data-oi="1"><span class="dot"></span>立刻点进「相似歌曲」，像开盲盒一样一首接一首</button><button class="q-option" data-p="L" data-oi="2"><span class="dot"></span>把它单曲循环到腻为止</button><button class="q-option" data-p="L" data-oi="3"><span class="dot"></span>存进「本命歌单」，从此认定这就是你的一生所爱</button></div></div><div class="q-slide" data-i="2"><div class="q-index">问题 3 / 20</div>
       <div class="q-text">如果你有年度听歌报告，它通常长什么样？</div>
@@ -706,14 +723,14 @@ footer a{text-decoration:underline;}
 <!-- GENRES -->
 <section id="genreSection">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head reveal in">
       <div class="tag">Step 03 · 曲风偏好</div>
       <h2>挑出你的听觉版图</h2>
       <p>选 3～6 个你最常听的曲风标签</p>
     </div>
-    <div class="chip-grid reveal" id="genreGrid"><button class="chip">华语流行</button><button class="chip">欧美流行</button><button class="chip">K-pop / J-pop</button><button class="chip">说唱 / Hip-Hop</button><button class="chip">电子 / Dance</button><button class="chip">摇滚 / 朋克</button><button class="chip">民谣</button><button class="chip">R&amp;B / Soul</button><button class="chip">古典 / 爵士</button><button class="chip">国风 / 古风</button><button class="chip">City Pop / 独立</button><button class="chip">ACG / 二次元</button><button class="chip">纯音乐 / Lo-fi</button></div>
-    <p class="chip-hint" id="genreHint">已选 0 / 6</p>
-    <div class="center-cta reveal">
+    <div class="chip-grid reveal in" id="genreGrid"><button class="chip picked">华语流行</button><button class="chip">欧美流行</button><button class="chip">K-pop / J-pop</button><button class="chip">说唱 / Hip-Hop</button><button class="chip">电子 / Dance</button><button class="chip">摇滚 / 朋克</button><button class="chip">民谣</button><button class="chip">R&amp;B / Soul</button><button class="chip">古典 / 爵士</button><button class="chip">国风 / 古风</button><button class="chip">City Pop / 独立</button><button class="chip">ACG / 二次元</button><button class="chip">纯音乐 / Lo-fi</button></div>
+    <p class="chip-hint" id="genreHint">已选 1 / 6</p>
+    <div class="center-cta reveal in">
       <button class="btn btn-dark magnetic" id="toContextBtn" disabled="">下一步 →</button>
     </div>
   </div>
@@ -724,14 +741,14 @@ footer a{text-decoration:underline;}
 <!-- CONTEXT -->
 <section class="section-alt" id="contextSection">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head reveal in">
       <div class="tag">Step 04 · 情绪使用方式</div>
       <h2>你通常在什么状态下打开音乐</h2>
       <p>选 2～5 个最贴近你的场景</p>
     </div>
-    <div class="chip-grid reveal" id="contextGrid"><button class="chip">通勤路上</button><button class="chip">学习工作时</button><button class="chip">深夜emo时</button><button class="chip">运动健身时</button><button class="chip">派对聚会时</button><button class="chip">心情低落时</button><button class="chip">兴奋庆祝时</button><button class="chip">一个人发呆时</button></div>
-    <p class="chip-hint" id="contextHint">已选 0 / 5</p>
-    <div class="center-cta reveal">
+    <div class="chip-grid reveal in" id="contextGrid"><button class="chip picked">通勤路上</button><button class="chip">学习工作时</button><button class="chip">深夜emo时</button><button class="chip">运动健身时</button><button class="chip">派对聚会时</button><button class="chip">心情低落时</button><button class="chip">兴奋庆祝时</button><button class="chip">一个人发呆时</button></div>
+    <p class="chip-hint" id="contextHint">已选 1 / 5</p>
+    <div class="center-cta reveal in">
       <button class="btn btn-dark magnetic" id="toStageBtn" disabled="">下一步 →</button>
     </div>
   </div>
@@ -741,13 +758,13 @@ footer a{text-decoration:underline;}
 <section id="stageSection">
   <div class="vinyl-deco bottom-left" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head reveal in">
       <div class="tag">Step 05 · 此刻的你</div>
       <h2>你现在的生活状态更像</h2>
       <p>这会让你的报告更细腻贴近你的生活切片（单选）</p>
     </div>
-    <div class="chip-grid reveal" id="stageGrid"><button class="chip">在校学生党</button><button class="chip">职场打工人</button><button class="chip">自由职业/创作者</button><button class="chip">考公考研备考人</button><button class="chip">间隔期探索者</button></div>
-    <div class="center-cta reveal">
+    <div class="chip-grid reveal in" id="stageGrid"><button class="chip">在校学生党</button><button class="chip">职场打工人</button><button class="chip">自由职业/创作者</button><button class="chip">考公考研备考人</button><button class="chip">间隔期探索者</button></div>
+    <div class="center-cta reveal in">
       <button class="btn btn-dark magnetic" id="toAnalyzeBtn" disabled="">生成我的音乐人格 →</button>
     </div>
   </div>
@@ -1196,6 +1213,8 @@ function buildRevealObserver(){
 
 function buildStepDots(){
   const wrap=document.getElementById("stepDots");
+  if(!wrap) return;
+  wrap.innerHTML="";
   STEPS.slice(0,6).forEach((s,i)=>{
     const d=document.createElement("span");
     if(i===0) d.classList.add("active");
@@ -1215,6 +1234,8 @@ function buildStepDots(){
 /* ---------- platforms ---------- */
 function buildPlatforms(){
   const grid=document.getElementById("platformGrid");
+  if(!grid) return;
+  grid.innerHTML="";
   PLATFORMS.forEach(p=>{
     const card=document.createElement("div");
     card.className="platform-card";
@@ -1277,6 +1298,8 @@ function buildPlatforms(){
 /* ---------- quiz ---------- */
 function buildQuiz(){
   const card=document.getElementById("questionCard");
+  if(!card) return;
+  card.innerHTML="";
   QUESTIONS.forEach((q,i)=>{
     const slide=document.createElement("div");
     slide.className="q-slide"+(i===0?" active":"");
@@ -1326,6 +1349,8 @@ function updateQuizProgress(){
 /* ---------- genres ---------- */
 function buildGenres(){
   const grid=document.getElementById("genreGrid");
+  if(!grid) return;
+  grid.innerHTML="";
   GENRES.forEach(g=>{
     const chip=document.createElement("button");
     chip.className="chip";
@@ -1352,6 +1377,8 @@ function buildGenres(){
 /* ---------- contexts ---------- */
 function buildContexts(){
   const grid=document.getElementById("contextGrid");
+  if(!grid) return;
+  grid.innerHTML="";
   CONTEXTS.forEach(c=>{
     const chip=document.createElement("button");
     chip.className="chip";
@@ -1378,6 +1405,8 @@ function buildContexts(){
 /* ---------- life stage ---------- */
 function buildStages(){
   const grid=document.getElementById("stageGrid");
+  if(!grid) return;
+  grid.innerHTML="";
   LIFE_STAGES.forEach(s=>{
     const chip=document.createElement("button");
     chip.className="chip";
@@ -1728,6 +1757,11 @@ function drawRadar(scores){
 
 /* ---------- restart ---------- */
 function restart(){
+  if(audioPlaying) stopHeroAudio();
+  const audioBtn=document.getElementById("audioToggle");
+  const audioLabel=document.getElementById("audioLabel");
+  if(audioBtn) audioBtn.textContent="▶";
+  if(audioLabel) audioLabel.textContent="试听慵懒氛围伴奏";
   state.answers=new Array(QUESTIONS.length).fill(null);
   state.qIndex=0;
   state.genres=[];
@@ -1955,9 +1989,13 @@ function ambientScheduler(){
   ambientTimerId=setTimeout(ambientScheduler, AMBIENT_SCHEDULE_MS);
 }
 
-function startHeroAudio(){
-  if(!actx){ if(!initAudioEngine()) return; }
-  actx.resume();
+async function startHeroAudio(){
+  if(!actx){ if(!initAudioEngine()) return false; }
+  try{
+    await actx.resume();
+  }catch(err){
+    return false;
+  }
   aMasterGain.gain.cancelScheduledValues(actx.currentTime);
   aMasterGain.gain.linearRampToValueAtTime(0.55, actx.currentTime+0.8);
   audioPlaying=true;
@@ -1965,6 +2003,7 @@ function startHeroAudio(){
   ambientNextTime=actx.currentTime+0.1;
   ambientScheduler();
   runHeroVisualizer();
+  return true;
 }
 
 function stopHeroAudio(){
@@ -2002,16 +2041,25 @@ function bindHeroAudio(){
   const btn=document.getElementById("audioToggle");
   const label=document.getElementById("audioLabel");
   if(!btn) return;
-  btn.addEventListener("click",()=>{
+  btn.addEventListener("click",async ()=>{
     if(!audioPlaying){
-      startHeroAudio();
-      btn.textContent="⏸";
-      label.textContent="正在循环播放氛围伴奏…";
+      const ok = await startHeroAudio();
+      if(ok){
+        btn.textContent="⏸";
+        label.textContent="正在循环播放氛围伴奏…";
+      }else{
+        label.textContent="当前浏览器不支持音频引擎或未允许播放";
+      }
     } else {
       stopHeroAudio();
       btn.textContent="▶";
       label.textContent="试听慵懒氛围伴奏";
     }
+  });
+  document.addEventListener("visibilitychange",()=>{
+    if(document.hidden && audioPlaying) stopHeroAudio();
+    if(document.hidden && btn) btn.textContent="▶";
+    if(document.hidden && label) label.textContent="试听慵懒氛围伴奏";
   });
 }
 
